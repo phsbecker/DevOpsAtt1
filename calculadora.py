@@ -13,8 +13,6 @@ def calcular_total(itens, desconto_percentual=0):
         for preco_unitario, quantidade in itens
     )
 
-    # Defeito proposital:
-    # o desconto percentual esta sendo subtraido como valor monetario.
     total = subtotal - ((subtotal/100)*desconto_percentual)
 
     return round(total, 2)
